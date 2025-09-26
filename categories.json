@@ -1,0 +1,84 @@
+{
+    "Home Appliances": [
+        {
+            "name": "Refrigerator",
+            "price": 15500.0,
+            "brand": "Samsung",
+            "model_year": 2023
+        },
+        {
+            "name": "Washing Machine",
+            "price": 8000,
+            "brand": "LG",
+            "model_year": 2022
+        },
+        {
+            "name": "Microwave",
+            "price": 2000,
+            "brand": "Whirlpool",
+            "model_year": 2024
+        }
+    ],
+    "Electronics": [
+        {
+            "name": "Laptop",
+            "price": 25000,
+            "brand": "Dell",
+            "model_year": 2024
+        },
+        {
+            "name": "Smartphone",
+            "price": 12000,
+            "brand": "iPhone",
+            "model_year": 2023
+        },
+        {
+            "name": "phone",
+            "price": 14500.0,
+            "brand": "Vivo",
+            "model_year": 2025
+        }
+    ],
+    "Fashion": [
+        {
+            "name": "T-Shirt",
+            "price": 300,
+            "brand": "Nike",
+            "model_year": 2024
+        },
+        {
+            "name": "Jeans",
+            "price": 800,
+            "brand": "Levi's",
+            "model_year": 2023
+        }
+    ],
+    "Books": [
+        {
+            "name": "Python Guide",
+            "price": 400.0,
+            "brand": "O'Reilly",
+            "model_year": 2023
+        },
+        {
+            "name": "Data Science",
+            "price": 560.0,
+            "brand": "Wiley",
+            "model_year": 2022
+        }
+    ],
+    "Sports": [
+        {
+            "name": "Football",
+            "price": 400,
+            "brand": "Adidas",
+            "model_year": 2024
+        },
+        {
+            "name": "Tennis Racket",
+            "price": 1500,
+            "brand": "Wilson",
+            "model_year": 2023
+        }
+    ]
+}

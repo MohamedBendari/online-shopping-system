@@ -1,0 +1,24 @@
+{
+    "users": {
+        "khwn2": {
+            "name": "omnia",
+            "phone": "93821382",
+            "email": "khwn2",
+            "gender": "f",
+            "governorate": "jnw",
+            "password": "2ipeqkwdiwdjwd",
+            "age": 20,
+            "nationalID": "231254676578798"
+        },
+        "MM": {
+            "name": "kSNKWD",
+            "phone": "WK;DWMDMSW",
+            "email": "MM",
+            "gender": "o",
+            "governorate": "kkk",
+            "password": "00",
+            "age": 20,
+            "nationalID": "2784538920"
+        }
+    }
+}
