@@ -211,8 +211,21 @@ class shoppingApp:
         back_btn.pack(pady=10)
         self.add_hover(back_btn, "#FF4444", "#FF6666")
 
+    def recursive_search(self, items, query, index=0, found=None):
+        if found is None:
+            found = []
+        if index >= len(items):
+            return found
+        item = items[index]
+        if (query in item.name.lower() or
+            query in str(item.price) or
+            query in item.brand.lower() or
+            query in str(item.model_year)):
+            found.append(item)
+        return self.recursive_search(items, query, index + 1, found)
+
     def do_search(self, category_name):
-        query = self.search_entry.get().strip()
+        query = self.search_entry.get().strip().lower()
         if not query:
             messagebox.showwarning("Search", "Enter a search term first")
             return
@@ -220,9 +233,8 @@ class shoppingApp:
         if not category_obj:
             messagebox.showerror("Error", "Category not found.")
             return
-        category_obj.bubble_sort(ascending=True, key='name')  
-        found_item = category_obj.binary_search(query, key='name')
-        self.display_items(self.list_frame, [found_item] if found_item else [])
+        found_items = self.recursive_search(category_obj.items, query)
+        self.display_items(self.list_frame, found_items if found_items else [])
 
     def do_sort(self, category_name, ascending):
         category_obj = self.store.categories.get(category_name)
